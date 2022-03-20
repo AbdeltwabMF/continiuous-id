@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "build": "webpack ./src/app.js -o ./public/"
+    "test": "jest --detectOpenHandles",
+    "build": "webpack --mode=production ./src/app.js -o ./public/"
   },
   "repository": {
     "type": "git",
