@@ -12,10 +12,22 @@ function monthOfTheYear (date = new Date()) {
 	return months[date.getMonth()];
 }
 
-console.log(monthOfTheYear());
-
 try {
-	document.getElementById('month').innerHTML = monthOfTheYear();
+	setInterval(() => {
+		// Returns a random integer from 0 to 11:
+		const random = Math.floor(Math.random() * 10) + 2;
+		const randomMonth = monthOfTheYear(new Date(2022, random, 4));
+		const currentMonth = monthOfTheYear();
+		const monthSpan = document.getElementById('month');
+
+		if(randomMonth === currentMonth) {
+			monthSpan.innerHTML = `is ${randomMonth}`;
+			monthSpan.style.cssText = "color: #FFC92F;";
+		} else {
+			monthSpan.innerHTML = `is not ${randomMonth}`;
+			monthSpan.style.cssText = "color: red;";
+		}
+	}, 3000);
 } catch(err) {}
 
 module.exports = monthOfTheYear;
