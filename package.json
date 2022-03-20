@@ -1,0 +1,22 @@
+{
+  "name": "devops",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll",
+    "build": "webpack ./src/app.js -o ./public/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/AbdeltwabMF/test-cicd.git"
+  },
+  "keywords": [],
+  "author": "Abd El-Twab M. Fakhry <abdeltwab.m.fakhry@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/AbdeltwabMF/test-cicd#readme",
+  "devDependencies": {
+    "webpack-cli": "^4.9.2",
+    "jest": "^27.5.1"
+  }
+}
