@@ -1,13 +1,13 @@
-const monthOfTheYear = require('../src/app');
+const sum = require('../app');
 
-test('Return the full name of current month', () => {
-	expect(monthOfTheYear(new Date(2022, 2, 20))).toBe('March');
+it("Returns 101", () => {
+	expect(sum(101)).toBe(101);
 });
 
-test('Return the full name of current month', () => {
-	expect(monthOfTheYear(new Date(2022, 3, 20))).toBe('April');
+it("Add 10 and 3", () => {
+	expect(sum(10, 3)).toBe(13);
 });
 
-test('Return the full name of current month', () => {
-	expect(monthOfTheYear(new Date(2022, 11, 20))).toBe('December');
+it("Add 3, 5 and 3", () => {
+	expect(sum(3, 5, 3)).toBe(11);
 });

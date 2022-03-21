@@ -1,22 +1,20 @@
 {
   "name": "devops",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Playing with github actions",
+  "main": "app.js",
   "scripts": {
-    "test": "jest --detectOpenHandles",
-    "build": "webpack --mode=production ./src/app.js -o ./public/"
+    "test": "jest --detectOpenHandles"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/AbdeltwabMF/test-cicd.git"
+    "url": "git+ssh://git@github.com/AbdeltwabMF/github-actions.git"
   },
   "keywords": [],
   "author": "Abd El-Twab M. Fakhry <abdeltwab.m.fakhry@gmail.com>",
   "license": "MIT",
-  "homepage": "https://github.com/AbdeltwabMF/test-cicd#readme",
+  "homepage": "https://github.com/AbdeltwabMF/github-actions#readme",
   "devDependencies": {
-    "webpack-cli": "^4.9.2",
     "jest": "^27.5.1"
   }
 }

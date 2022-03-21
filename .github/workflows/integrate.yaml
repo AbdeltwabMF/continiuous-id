@@ -1,4 +1,4 @@
-name: Node CI
+name: Node Continiuous Integration
 
 on:
   pull_request:
@@ -6,7 +6,7 @@ on:
     branches: [ main ]
 
 jobs:
-  test_pull_request:
+  test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -15,4 +15,4 @@ jobs:
           node-version: 17
       - run: npm ci
       - run: npm test
-      - run: npm run build
+        uses: github/super-linter@v4.9.0
