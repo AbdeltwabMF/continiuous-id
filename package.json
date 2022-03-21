@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/AbdeltwabMF/github-actions.git"
+    "url": "git+ssh://git@github.com/AbdeltwabMF/continiuous-id.git"
   },
   "keywords": [],
   "author": "Abd El-Twab M. Fakhry <abdeltwab.m.fakhry@gmail.com>",
   "license": "MIT",
-  "homepage": "https://github.com/AbdeltwabMF/github-actions#readme",
+  "homepage": "https://github.com/AbdeltwabMF/continiuous-id#readme",
   "devDependencies": {
     "jest": "^27.5.1"
   }
