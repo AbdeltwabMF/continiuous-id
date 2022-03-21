@@ -16,5 +16,10 @@
   "homepage": "https://github.com/AbdeltwabMF/continuous-id#readme",
   "devDependencies": {
     "jest": "^27.5.1"
-  }
+  },
+	"standard": {
+		"ignore": [
+			""
+		]
+	}
 }
