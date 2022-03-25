@@ -6,8 +6,7 @@ on:
 
 jobs:
   lint_code:
-  runs-on: ubuntu-latest
-
+    runs-on: ubuntu-latest
     steps:
       - uses: |
         actions/checkout@v3

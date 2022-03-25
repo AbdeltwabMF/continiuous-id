@@ -14,5 +14,5 @@ jobs:
         with:
           node-version: latest
       - run: |
-        npm ci || npm install
+        npm ci
         npm test
