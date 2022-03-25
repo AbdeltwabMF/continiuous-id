@@ -1,3 +1,4 @@
+---
 name: node continuous integration
 
 on:
@@ -15,3 +16,4 @@ jobs:
           check-latest: true
       - run: npm ci
       - run: npm test
+---
