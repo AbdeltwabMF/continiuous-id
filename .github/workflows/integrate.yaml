@@ -10,8 +10,7 @@ on:
 jobs:
   test:
     env:
-      shell: bash
-      VERSION: ${${{github.ref_name}}#xyz-}
+      VERSION: ${${{github.ref_name}}#"xyz-"}
 
     runs-on: ubuntu-latest
     steps:
