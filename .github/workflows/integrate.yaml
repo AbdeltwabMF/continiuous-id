@@ -10,10 +10,7 @@ on:
 jobs:
   test:
     env:
-      run: |
-        TAG_NAME=${{github.ref_name}}
-        VERSION=${TAG_NAME#"xyz-"}
-      VERSION: ${VERSION}
+      VERSION: ${{github.ref_name}}#"xyz-"
 
     runs-on: ubuntu-latest
     steps:
