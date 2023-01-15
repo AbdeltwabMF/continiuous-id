@@ -19,4 +19,6 @@ jobs:
         with:
           check-latest: true
       - run: npm ci
-      - run: npm test
+      - run: |
+          npm test
+          echo ${{env.VERSION}}
